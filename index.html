@@ -60,25 +60,32 @@
         <h2 class="display-3 fw-bold my-3">¿Quiénes Somos?</h2>
         <div class="row">
           <div class="col-12 col-md-4">
-            <img src="assets/img/avion-negro (1).png" alt="" style="background-color: #3C9EA9;">
-            <p class="my-3">
+            <button id="toggleButton">
+             <img src="assets/img/avion-negro (1).png" alt="" style="background-color: #3C9EA9;">
+           </button>
+            <p class="my-3" id="hiddenText1">
                 Lorem ipsum dolor sit amet consectetur, adipiscing elit fringilla venenatis gravida, laoreet at taciti semper. Tellus inceptos neque dui quam fames lobortis at, erat pretium mi feugiat sem volutpat aenean pharetra, lacus lacinia imperdiet taciti orci suscipit. Porttitor metus ad quisque vehicula pretium parturient arcu, gravida aenean felis nec mi suspendisse cum, litora cubilia tortor consequat auctor in. Mattis eu sociosqu a potenti placerat aliquam morbi penatibus mus, accumsan ante aliquet cum ornare egestas elementum donec, montes habitant curabitur dignissim massa tortor sagittis parturient. Rutrum platea aptent augue lacinia torquent blandit curabitur, malesuada vivamus quam cursus maecenas sodales venenatis primis, ullamcorper himenaeos suspendisse sed lobortis curae. Placerat laoreet himenaeos facilisis nulla dui netus luctus congue ligula, natoque cursus velit morbi mattis nisi pharetra lectus, hac sed dis quisque massa quam nisl dignissim.
             </p>
           </div>
           <div class="col-12 col-md-4">
-            <p class="my-3">
+            <p class="my-3" id="hiddenText2">
               Lorem ipsum dolor sit amet consectetur, adipiscing elit fringilla venenatis gravida, laoreet at taciti semper. Tellus inceptos neque dui quam fames lobortis at, erat pretium mi feugiat sem volutpat aenean pharetra, lacus lacinia imperdiet taciti orci suscipit. Porttitor metus ad quisque vehicula pretium parturient arcu, gravida aenean felis nec mi suspendisse cum, litora cubilia tortor consequat auctor in. Mattis eu sociosqu a potenti placerat aliquam morbi penatibus mus, accumsan ante aliquet cum ornare egestas elementum donec, montes habitant curabitur dignissim massa tortor sagittis parturient. Rutrum platea aptent augue lacinia torquent blandit curabitur, malesuada vivamus quam cursus maecenas sodales venenatis primis, ullamcorper himenaeos suspendisse sed lobortis curae. Placerat laoreet himenaeos facilisis nulla dui netus luctus congue ligula, natoque cursus velit morbi mattis nisi pharetra lectus, hac sed dis quisque massa quam nisl dignissim.
             </p>
-            <img src="assets/img/montanas.png" alt="" style="background-color: #3C9EA9;">
+            <button id="toggleButton">
+             <img src="assets/img/montanas.png" alt="" style="background-color: #3C9EA9;">
+            </button>
           </div>
           <div class="col-12 col-md-4">
-            <img src="assets/img/camino.png" alt="" style="background-color: #3C9EA9;">
-            <p class="my-3">
+            <button id="toggleButton">
+             <img src="assets/img/camino.png" alt="" style="background-color: #3C9EA9;">
+            </button>
+            <p class="my-3" id="hiddenText3">
                 Lorem ipsum dolor sit amet consectetur, adipiscing elit fringilla venenatis gravida, laoreet at taciti semper. Tellus inceptos neque dui quam fames lobortis at, erat pretium mi feugiat sem volutpat aenean pharetra, lacus lacinia imperdiet taciti orci suscipit. Porttitor metus ad quisque vehicula pretium parturient arcu, gravida aenean felis nec mi suspendisse cum, litora cubilia tortor consequat auctor in. Mattis eu sociosqu a potenti placerat aliquam morbi penatibus mus, accumsan ante aliquet cum ornare egestas elementum donec, montes habitant curabitur dignissim massa tortor sagittis parturient. Rutrum platea aptent augue lacinia torquent blandit curabitur, malesuada vivamus quam cursus maecenas sodales venenatis primis, ullamcorper himenaeos suspendisse sed lobortis curae. Placerat laoreet himenaeos facilisis nulla dui netus luctus congue ligula, natoque cursus velit morbi mattis nisi pharetra lectus, hac sed dis quisque massa quam nisl dignissim.
             </p>
           </div>
         </div>
       </section>
+
 
 <!--Destacados Cards-->      
 
@@ -200,7 +207,24 @@
      </div>
     </footer>
   
-    
+  <script>
+      document.getElementById("toggleButton").addEventListener("click", function() {
+  var hiddenText1 = document.getElementById("hiddenText1");
+  var hiddenText2 = document.getElementById("hiddenText2");
+  var hiddenText3 = document.getElementById("hiddenText3");
+
+  if (hiddenText1.style.display === "none") {
+    hiddenText1.style.display = "block"; 
+    hiddenText2.style.display = "block"; 
+    hiddenText3.style.display = "block"; 
+  } else {
+    hiddenText1.style.display = "none"; 
+    hiddenText2.style.display = "none"; 
+    hiddenText3.style.display = "none"; 
+  }
+});
+</script> 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
