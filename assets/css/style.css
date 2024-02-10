@@ -1,0 +1,124 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar */
+
+.navbar {
+    color: #fff;
+    background-color:#3DBFB0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    display: flex;
+    color: white;
+}
+
+.navbar-logo {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+} 
+
+/* Quiénes Somos */
+#Quiénes-Somos {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    padding-top: 40px;
+    padding-left: 175px;
+    padding-right: 174px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: black;
+  }
+
+  /* Destacados */
+
+#Destacados .image-top {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+#Destacados {
+    background-color: black;
+  }
+
+  .card-body{
+    background-color: #24C9EA;
+    color: #fff;
+  }
+
+/* Contacto */
+  
+#Contacto{
+    width: 80%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 0px;
+    padding-top: 40px;
+    padding-left: 475px;
+    padding-right: 468px;
+    padding-bottom: 80px;
+    background-color: black;
+    box-sizing:unset;
+    box-shadow: inset 1000px black;    
+    } 
+
+.btn{
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #24C9EA ;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand {
+    font-size: 20px;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-link {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cambio de color en el hover */
+.social-link:hover {
+    color: #ccc;
+}
